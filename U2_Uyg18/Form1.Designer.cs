@@ -73,7 +73,7 @@ namespace U2_Uyg18
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "44";
             this.ResumeLayout(false);
             this.PerformLayout();
 
