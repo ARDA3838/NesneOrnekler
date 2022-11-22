@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace U2_Uyg24
+namespace U2_GOLD_SORU
 {
     public partial class Form1 : Form
     {
@@ -19,15 +19,14 @@ namespace U2_Uyg24
 
         private void button1_Click(object sender, EventArgs e)
         {
-            int sayı1, sayı2, toplam;
-            sayı1 = Convert.ToInt32(textBox1.Text);
-            sayı2 = Convert.ToInt32(textBox2.Text);
-            toplam = 0;
-            for (int i = sayı1; i <= sayı2; i++)
-            {   
-                toplam = toplam + i;
+            
+            double kuvet;
+            for (int i = 0; i < i; i++)
+            {
+                kuvet = Math.Pow(10, i);
+                listBox1.Items.Add(kuvet);
+                textBox1.Text = i.ToString();
             }
-            MessageBox.Show("sayıların toplamı =" + toplam.ToString());
         }
     }
 }
