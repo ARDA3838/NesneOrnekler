@@ -13,13 +13,14 @@ namespace U2_SS_55
             boy = Convert.ToInt32(textBox1.Text);
             kilo = Convert.ToInt32(textBox2.Text);
             sonuc = boy - ((boy / 4) + 50);
+
             if (kilo > sonuc)
             {
-                label1.Text = "KÝLOLU";
+                label1.Text = "KÝLOLU !";
             }
             else
             {
-                label1.Text = "ZAYIF";
+                label1.Text = "ZAYIF !";
             }
         }
     }
