@@ -48,7 +48,7 @@ namespace U2_GoldSoru1_
             this.button2.BackColor = System.Drawing.Color.Yellow;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button2.ForeColor = System.Drawing.Color.Maroon;
-            this.button2.Location = new System.Drawing.Point(343, 437);
+            this.button2.Location = new System.Drawing.Point(304, 437);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(288, 94);
             this.button2.TabIndex = 23;
