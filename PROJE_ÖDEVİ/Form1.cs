@@ -16,5 +16,22 @@ namespace PROJE_ÖDEVİ
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form2 frm2 = new Form2(); //Form2 Çagırdık
+            frm2.Show();
+            this.Hide();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            button2.Enabled = false;
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            button2.Enabled = true;
+        }
     }
 }
