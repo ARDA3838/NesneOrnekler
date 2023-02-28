@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace U4_S_123
+namespace U4_Uyg2
 {
     public partial class Form1 : Form
     {
@@ -17,20 +17,15 @@ namespace U4_S_123
             InitializeComponent();
         }
         string[] isimler = new string[5];
-        int[] notlar = new int[5];
         int index = 0;
-
         private void button1_Click(object sender, EventArgs e)
         {
-           if (index < isimler.Length)
-            { 
+            if (index < isimler.Length)
+            {
                 isimler[index] = textBox1.Text;
-                notlar[index] = int.Parse(textBox2.Text);
                 index++;
-                textBox1.Text = "";
-                textBox2.Text = "";
+                textBox1.Text = "";               
             }
-
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -39,16 +34,9 @@ namespace U4_S_123
             {
                 if (isimler[i] != null)
                 {
-                    listBox1.Items.Add(isimler[i] + " > " + notlar[i]);
-                }
-                int[] sayilar = { 20, 30, 40, 50 };
-                 foreach (int sayi in sayilar)
-                {
-                Console.WriteLine(sayi);
+                    listBox1.Items.Add(isimler[i]);
                 }
             }
         }
     }
 }
-
-
