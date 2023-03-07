@@ -16,5 +16,10 @@ namespace U4_Uyg12
         {
             InitializeComponent();
         }
+        
+        private void btnEkle_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
