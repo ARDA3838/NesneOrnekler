@@ -33,5 +33,11 @@ namespace PROJE_ÖDEVİ
         {
             button2.Enabled = true;
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form3 frm3 = new Form3();
+            frm3.Show();          
+        }
     }
 }
