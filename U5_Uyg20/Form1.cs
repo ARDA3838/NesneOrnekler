@@ -19,8 +19,8 @@ namespace U5_Uyg20
         class Ogrenciler
         {
             public int Numara { get; set; }
-            public int AdSoyad { get; set; }
-            public int Alan { get; set; }
+            public string AdSoyad { get; set; }
+            public string Alan { get; set; }
         }
         private void btnVeriBagla_Click(object sender, EventArgs e)
         {
