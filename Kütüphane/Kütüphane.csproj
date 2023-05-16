@@ -55,11 +55,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Kitapislemleri.cs">
+    <Compile Include="Kitapislemleri.cs" />
+    <Compile Include="Ogrenciislemleri.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Kitapislemleri.Designer.cs">
-      <DependentUpon>Kitapislemleri.cs</DependentUpon>
+    <Compile Include="Ogrenciislemleri.Designer.cs">
+      <DependentUpon>Ogrenciislemleri.cs</DependentUpon>
     </Compile>
     <Compile Include="OduncKitapislemleri.cs">
       <SubType>Form</SubType>
@@ -67,11 +68,11 @@
     <Compile Include="OduncKitapislemleri.Designer.cs">
       <DependentUpon>OduncKitapislemleri.cs</DependentUpon>
     </Compile>
-    <Compile Include="Ogrenciislemleri.cs">
+    <Compile Include="Kitap.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Ogrenciislemleri.Designer.cs">
-      <DependentUpon>Ogrenciislemleri.cs</DependentUpon>
+    <Compile Include="Kitap.Designer.cs">
+      <DependentUpon>Kitap.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -81,8 +82,15 @@
     <Compile Include="Turislemeleri.Designer.cs">
       <DependentUpon>Turislemeleri.cs</DependentUpon>
     </Compile>
+    <Compile Include="VeriTabaniIslemleri.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ogrenciislemleri.resx">
+      <DependentUpon>Ogrenciislemleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kitap.resx">
+      <DependentUpon>Kitap.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

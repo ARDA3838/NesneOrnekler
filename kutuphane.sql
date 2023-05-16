@@ -47,6 +47,17 @@ DELETE FROM `kitap_turleri`;
 /*!40000 ALTER TABLE `kitap_turleri` DISABLE KEYS */;
 /*!40000 ALTER TABLE `kitap_turleri` ENABLE KEYS */;
 
+-- tablo yapısı dökülüyor kütüphane.odunc_kitaplar
+DROP TABLE IF EXISTS `odunc_kitaplar`;
+CREATE TABLE IF NOT EXISTS `odunc_kitaplar` (
+  `tur_id` int DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+-- kütüphane.odunc_kitaplar: ~0 rows (yaklaşık) tablosu için veriler indiriliyor
+DELETE FROM `odunc_kitaplar`;
+/*!40000 ALTER TABLE `odunc_kitaplar` DISABLE KEYS */;
+/*!40000 ALTER TABLE `odunc_kitaplar` ENABLE KEYS */;
+
 -- tablo yapısı dökülüyor kütüphane.ogrenci
 DROP TABLE IF EXISTS `ogrenci`;
 CREATE TABLE IF NOT EXISTS `ogrenci` (

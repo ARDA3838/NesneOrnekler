@@ -24,14 +24,14 @@ namespace Kütüphane
 
         private void btnKitap_Click(object sender, EventArgs e)
         {
-            Kitapislemleri kitap = new Kitapislemleri();
+            Kitap kitap = new Kitap();
             kitap.ShowDialog();
         }
 
         private void btnOgrenci_Click(object sender, EventArgs e)
         {
-            Ogrenciislemleri ogrenci = new Ogrenciislemleri();
-            ogrenci.ShowDialog();
+            Ogrenciislemleri ogrenciislemleri = new Ogrenciislemleri();
+            ogrenciislemleri.ShowDialog();
         }
 
         private void btnTur_Click(object sender, EventArgs e)

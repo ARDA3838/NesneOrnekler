@@ -208,7 +208,7 @@ namespace PROJE_ÖDEVİ
             this.Controls.Add(this.label1);
             this.Name = "Form2";
             this.StartPosition = System.Windows.Forms.FormStartPosition.WindowsDefaultBounds;
-            this.Text = "Form2";
+            this.Text = "Bölümler ve Yaş Sınırı";
             this.ResumeLayout(false);
             this.PerformLayout();
 

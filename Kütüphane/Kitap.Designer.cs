@@ -1,7 +1,7 @@
 ﻿
 namespace Kütüphane
 {
-    partial class Kitapislemleri
+    partial class Kitap
     {
         /// <summary>
         /// Required designer variable.
@@ -29,10 +29,17 @@ namespace Kütüphane
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // Kitap
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Kitapislemleri";
+            this.Name = "Kitap";
+            this.Text = "Kitap";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
