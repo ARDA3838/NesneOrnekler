@@ -1,13 +1,18 @@
 ﻿using MySql.Data.MySqlClient;
-using System;
+using System.Configuration;
 
 namespace Kütüphane
 {
     internal class VeriTabaniIslemleri
     {
-        internal MySqlConnection baglan()
+        string baglantiCümlesi = ConfigurationManager.ConnectionStrings["kutuphaneBaglantiCumlesi"].ConnectionString;
+
+        public MySqlConnection baglan()
         {
-            throw new NotImplementedException();
+            MySqlConnection baglanti = new MySqlConnection(baglantiCümlesi);
+
+            MySqlConnection.ClearPool(baglanti);
+            return baglanti;
         }
     }
 }

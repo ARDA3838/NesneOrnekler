@@ -30,7 +30,7 @@ namespace Kütüphane
 
         private void btnOgrenci_Click(object sender, EventArgs e)
         {
-            Ogrenciislemleri ogrenciislemleri = new Ogrenciislemleri();
+            formOgrenciler ogrenciislemleri = new formOgrenciler();
             ogrenciislemleri.ShowDialog();
         }
 

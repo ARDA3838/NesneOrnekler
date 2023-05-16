@@ -1,7 +1,7 @@
 ﻿
 namespace Kütüphane
 {
-    partial class Ogrenciislemleri
+    partial class formOgrenciler
     {
         /// <summary>
         /// Required designer variable.
@@ -43,7 +43,7 @@ namespace Kütüphane
             this.txtAd = new System.Windows.Forms.TextBox();
             this.txtSoyad = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.txtOgrenci = new System.Windows.Forms.TextBox();
+            this.txtAramaOgrenci = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.btnGüncelle = new System.Windows.Forms.Button();
@@ -183,7 +183,7 @@ namespace Kütüphane
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.txtOgrenci);
+            this.groupBox2.Controls.Add(this.txtAramaOgrenci);
             this.groupBox2.Controls.Add(this.label7);
             this.groupBox2.Location = new System.Drawing.Point(12, 142);
             this.groupBox2.Name = "groupBox2";
@@ -192,12 +192,13 @@ namespace Kütüphane
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Arama";
             // 
-            // txtOgrenci
+            // txtAramaOgrenci
             // 
-            this.txtOgrenci.Location = new System.Drawing.Point(102, 48);
-            this.txtOgrenci.Name = "txtOgrenci";
-            this.txtOgrenci.Size = new System.Drawing.Size(142, 20);
-            this.txtOgrenci.TabIndex = 9;
+            this.txtAramaOgrenci.Location = new System.Drawing.Point(102, 48);
+            this.txtAramaOgrenci.Name = "txtAramaOgrenci";
+            this.txtAramaOgrenci.Size = new System.Drawing.Size(142, 20);
+            this.txtAramaOgrenci.TabIndex = 9;
+            this.txtAramaOgrenci.TextChanged += new System.EventHandler(this.txtAramaOgrenci_TextChanged);
             // 
             // label7
             // 
@@ -230,6 +231,7 @@ namespace Kütüphane
             this.btnGüncelle.TabIndex = 5;
             this.btnGüncelle.Text = "Güncelle";
             this.btnGüncelle.UseVisualStyleBackColor = true;
+            this.btnGüncelle.Click += new System.EventHandler(this.btnGüncelle_Click);
             // 
             // btnSil
             // 
@@ -240,6 +242,7 @@ namespace Kütüphane
             this.btnSil.TabIndex = 4;
             this.btnSil.Text = "Sil";
             this.btnSil.UseVisualStyleBackColor = true;
+            this.btnSil.Click += new System.EventHandler(this.btnSil_Click);
             // 
             // btnKaydet
             // 
@@ -250,6 +253,7 @@ namespace Kütüphane
             this.btnKaydet.TabIndex = 3;
             this.btnKaydet.Text = "Kaydet";
             this.btnKaydet.UseVisualStyleBackColor = true;
+            this.btnKaydet.Click += new System.EventHandler(this.btnKaydet_Click);
             // 
             // GridOgrenci
             // 
@@ -258,8 +262,9 @@ namespace Kütüphane
             this.GridOgrenci.Name = "GridOgrenci";
             this.GridOgrenci.Size = new System.Drawing.Size(759, 191);
             this.GridOgrenci.TabIndex = 3;
+            this.GridOgrenci.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.GridOgrenci_CellClick);
             // 
-            // Ogrenciislemleri
+            // formOgrenciler
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -268,9 +273,9 @@ namespace Kütüphane
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Name = "Ogrenciislemleri";
+            this.Name = "formOgrenciler";
             this.Text = "Ogrenciislemleri";
-            this.Load += new System.EventHandler(this.Kitapislemleri_Load);
+            this.Load += new System.EventHandler(this.formOgrenciler_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -297,7 +302,7 @@ namespace Kütüphane
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.TextBox txtOgrenci;
+        private System.Windows.Forms.TextBox txtAramaOgrenci;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Button btnGüncelle;
