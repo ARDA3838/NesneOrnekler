@@ -15,6 +15,11 @@ namespace Kütüphane
 
     public partial class formOgrenciler : Form
     {
+        public formOgrenciler()
+        {
+            InitializeComponent();
+        }
+
         VeriTabaniIslemleri vtIslemleri = new VeriTabaniIslemleri();
         MySqlConnection baglanti;
         MySqlCommand komut;

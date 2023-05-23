@@ -24,7 +24,7 @@ namespace Kütüphane
 
         private void btnKitap_Click(object sender, EventArgs e)
         {
-            Kitap kitap = new Kitap();
+            formKitap kitap = new formKitap();
             kitap.ShowDialog();
         }
 
