@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -18,6 +19,9 @@ namespace PROJE_ÖDEVİ
         }
 
         DataTable tablo = new DataTable();
+        MySqlConnection baglanti;
+        MySqlCommand komut;
+        string komutsatiri;
         private void Form3_Load(object sender, EventArgs e)
         {         
             
@@ -34,8 +38,20 @@ namespace PROJE_ÖDEVİ
 
         private void button1_Click(object sender, EventArgs e)
         {
-            tablo.Rows.Add(textBox1.Text, textBox2.Text, textBox3.Text, comboBox1.Text, comboBox2.Text, dateTimePicker1.Text);
-            dataGridView1.DataSource = tablo;
+            try
+            {
+                if (baglanti.State != ConnectionState.Open)
+                {
+                    baglanti.Open();
+                }
+                komutsatiri = "INSERT INTO kayıt_hasta (tc, ad_soyad, telefon, ay_gün_saat, branş_bölüm, hastane)";
+                komut = new MySqlCommand(komutsatiri, baglanti);
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)

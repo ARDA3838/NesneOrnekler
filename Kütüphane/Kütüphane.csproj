@@ -66,11 +66,11 @@
     <Compile Include="OduncKitapislemleri.Designer.cs">
       <DependentUpon>OduncKitapislemleri.cs</DependentUpon>
     </Compile>
-    <Compile Include="Kitap.cs">
+    <Compile Include="Kitapislemleri.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Kitap.Designer.cs">
-      <DependentUpon>Kitap.cs</DependentUpon>
+    <Compile Include="Kitapislemleri.Designer.cs">
+      <DependentUpon>Kitapislemleri.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -87,8 +87,8 @@
     <EmbeddedResource Include="Ogrenciislemleri.resx">
       <DependentUpon>Ogrenciislemleri.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Kitap.resx">
-      <DependentUpon>Kitap.cs</DependentUpon>
+    <EmbeddedResource Include="Kitapislemleri.resx">
+      <DependentUpon>Kitapislemleri.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
