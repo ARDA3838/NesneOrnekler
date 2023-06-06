@@ -18,7 +18,7 @@ namespace PROJE_ÖDEVİ
             InitializeComponent();
         }
 
-        DataTable tablo = new DataTable();
+        DBHelper vt = new DBHelper();
         MySqlConnection baglanti;
         MySqlCommand komut;
         string komutsatiri;
@@ -32,8 +32,8 @@ namespace PROJE_ÖDEVİ
         {
             try
             {
-                baglanti = tablo.baglan();
-                komutsatiri = "Select * Form randevu";
+                baglanti = vt.baglan();
+                komutsatiri = "Select * FROM hasta_kayıt";
                 MySqlDataAdapter dataAdapter = MySqlDataAdapter (komutsatiri, baglanti);
                 DataTable dataTable = new DataTable();
                 dataAdapter.Fill(dataTable);
@@ -65,15 +65,15 @@ namespace PROJE_ÖDEVİ
                 {
                     baglanti.Open();
                 }
-                komutsatiri = "INSERT INTO randevu(tc,ad,soyad,telefon,ay_gün_saat,branş_bölüm,hastane)VALUES(@tc, @ad, @soyad, @telefon, @ay_gün_saat, @branş_bölüm, @hastane)";
+                komutsatiri = "INSERT INTO hasta_kayıt(tc,ad,soyad,telefon,ay_gün_saat,branş_bölüm,hastane)VALUES(@tc, @ad, @soyad, @telefon, @ay_gün_saat, @branş_bölüm, @hastane)";
                 komut = new MySqlCommand(komutsatiri, baglanti);
-                komut.Parameters.AddWithValue("@tc", int.Parse(textBox1.Text));
+                komut.Parameters.AddWithValue("@tc", textBox1.Text);
                 komut.Parameters.AddWithValue("@ad", textBox2.Text);
                 komut.Parameters.AddWithValue("@soyad", txtSoyad.Text);
-                komut.Parameters.AddWithValue("@telefon", int.Parse(textBox3.Text));
+                komut.Parameters.AddWithValue("@telefon", textBox3.Text);
                 komut.Parameters.AddWithValue("@branş_bölüm", comboBox1.SelectedItem.ToString());
                 komut.Parameters.AddWithValue("@hastane", comboBox2.SelectedItem.ToString());
-                komut.Parameters.AddWithValue("@ay_gün_saat", int.Parse(dateTimePicker1.Text));
+                komut.Parameters.AddWithValue("@ay_gün_saat", dateTimePicker1.Text);
 
                 komut.ExecuteNonQuery();
                 baglanti.Close();
@@ -122,7 +122,7 @@ namespace PROJE_ÖDEVİ
                 {
                     baglanti.Open();
                 }
-                komutsatiri = "DELETE FROM randevu WHERE tc = @tc";
+                komutsatiri = "DELETE FROM hasta_kayıt WHERE tc = @tc";
                 komut = new MySqlCommand(komutsatiri, baglanti);
                 komut.Parameters.AddWithValue("@tc", dataGridView1.CurrentRow.Cells["tc"].Value.ToString());
                 komut.ExecuteNonQuery();
@@ -141,19 +141,19 @@ namespace PROJE_ÖDEVİ
         {
             try
             {
-                if (baglanti.State != ConnectionState.Open);
+                if (baglanti.State != ConnectionState.Open) ;
                 {
                     baglanti.Open();
                 }
-                komutsatiri = "UPDATE hasta_katıt SET ad=@ad, soyad=@soyad, telefon=@telefon, branş_bölüm=@branş_bölüm, hastane=@hastane, ay_gün_saat=@ay_gün_saat where tc=@tc";
+                komutsatiri = "UPDATE hasta_kayıt SET ad=@ad, soyad=@soyad, telefon=@telefon, branş_bölüm=@branş_bölüm, hastane=@hastane, ay_gün_saat=@ay_gün_saat where tc=@tc";
                 komut = new MySqlCommand(komutsatiri, baglanti);
                 komut.Parameters.AddWithValue("@tc", int.Parse(dataGridView1.CurrentRow.Cells["tc"].Value.ToString()));
                 komut.Parameters.AddWithValue("@ad", textBox2.Text);
                 komut.Parameters.AddWithValue("@soyad", txtSoyad.Text);
-                komut.Parameters.AddWithValue("@telefon", int.Parse(textBox3.Text));
+                komut.Parameters.AddWithValue("@telefon", textBox3.Text);
                 komut.Parameters.AddWithValue("@branş_bölüm", comboBox1.SelectedItem.ToString());
                 komut.Parameters.AddWithValue("@hastane", comboBox2.SelectedItem.ToString());
-                komut.Parameters.AddWithValue("@ay_gün_saat", int.Parse(dateTimePicker1.Text));
+                komut.Parameters.AddWithValue("@ay_gün_saat", dateTimePicker1.Text);
 
                 komut.ExecuteNonQuery();
                 baglanti.Close();
