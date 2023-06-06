@@ -45,21 +45,24 @@ namespace PROJE_ÖDEVİ
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.textBox1 = new System.Windows.Forms.MaskedTextBox();
             this.button3 = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txtSoyad = new System.Windows.Forms.TextBox();
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(217, 32);
+            this.textBox2.Location = new System.Drawing.Point(217, 35);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(186, 20);
+            this.textBox2.Size = new System.Drawing.Size(121, 20);
             this.textBox2.TabIndex = 1;
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(217, 58);
+            this.textBox3.Location = new System.Drawing.Point(217, 86);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(121, 20);
+            this.textBox3.Size = new System.Drawing.Size(142, 20);
             this.textBox3.TabIndex = 2;
             // 
             // comboBox1
@@ -71,9 +74,9 @@ namespace PROJE_ÖDEVİ
             "Çocuk Hastalıkları",
             "Noroloji",
             "Pisikiyatri"});
-            this.comboBox1.Location = new System.Drawing.Point(217, 84);
+            this.comboBox1.Location = new System.Drawing.Point(217, 112);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1.Size = new System.Drawing.Size(142, 21);
             this.comboBox1.TabIndex = 3;
             // 
             // comboBox2
@@ -84,9 +87,9 @@ namespace PROJE_ÖDEVİ
             "Fakulte",
             "Devlet Hastanesi ",
             "Kayseri Özel Hastanesi"});
-            this.comboBox2.Location = new System.Drawing.Point(217, 111);
+            this.comboBox2.Location = new System.Drawing.Point(217, 139);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 21);
+            this.comboBox2.Size = new System.Drawing.Size(142, 21);
             this.comboBox2.TabIndex = 4;
             // 
             // label1
@@ -105,15 +108,15 @@ namespace PROJE_ÖDEVİ
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label2.Location = new System.Drawing.Point(12, 35);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(113, 13);
+            this.label2.Size = new System.Drawing.Size(32, 13);
             this.label2.TabIndex = 6;
-            this.label2.Text = "Hasta adı soy adı :";
+            this.label2.Text = "AD :";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label3.Location = new System.Drawing.Point(12, 61);
+            this.label3.Location = new System.Drawing.Point(12, 89);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(141, 13);
             this.label3.TabIndex = 7;
@@ -123,7 +126,7 @@ namespace PROJE_ÖDEVİ
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label4.Location = new System.Drawing.Point(12, 87);
+            this.label4.Location = new System.Drawing.Point(12, 115);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(114, 13);
             this.label4.TabIndex = 8;
@@ -133,7 +136,7 @@ namespace PROJE_ÖDEVİ
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label5.Location = new System.Drawing.Point(12, 114);
+            this.label5.Location = new System.Drawing.Point(12, 142);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(199, 13);
             this.label5.TabIndex = 9;
@@ -142,9 +145,9 @@ namespace PROJE_ÖDEVİ
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button1.Location = new System.Drawing.Point(433, 61);
+            this.button1.Location = new System.Drawing.Point(433, 89);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(126, 67);
+            this.button1.Size = new System.Drawing.Size(156, 67);
             this.button1.TabIndex = 21;
             this.button1.Text = "Hasta Kayıt";
             this.button1.UseVisualStyleBackColor = true;
@@ -154,7 +157,7 @@ namespace PROJE_ÖDEVİ
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label14.Location = new System.Drawing.Point(12, 144);
+            this.label14.Location = new System.Drawing.Point(12, 172);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(172, 13);
             this.label14.TabIndex = 23;
@@ -164,7 +167,7 @@ namespace PROJE_ÖDEVİ
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label12.Location = new System.Drawing.Point(12, 354);
+            this.label12.Location = new System.Drawing.Point(12, 382);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(370, 13);
             this.label12.TabIndex = 24;
@@ -172,7 +175,7 @@ namespace PROJE_ÖDEVİ
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(217, 138);
+            this.dateTimePicker1.Location = new System.Drawing.Point(217, 166);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
             this.dateTimePicker1.TabIndex = 28;
@@ -183,11 +186,12 @@ namespace PROJE_ÖDEVİ
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(15, 181);
+            this.dataGridView1.Location = new System.Drawing.Point(15, 209);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.Size = new System.Drawing.Size(736, 150);
             this.dataGridView1.TabIndex = 29;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // textBox1
             // 
@@ -201,20 +205,51 @@ namespace PROJE_ÖDEVİ
             // button3
             // 
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button3.Location = new System.Drawing.Point(575, 61);
+            this.button3.Location = new System.Drawing.Point(595, 89);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(126, 67);
+            this.button3.Size = new System.Drawing.Size(158, 67);
             this.button3.TabIndex = 31;
             this.button3.Text = "Kayıt Sil";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label6.Location = new System.Drawing.Point(12, 64);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(61, 16);
+            this.label6.TabIndex = 32;
+            this.label6.Text = "Soyad :";
+            // 
+            // txtSoyad
+            // 
+            this.txtSoyad.Location = new System.Drawing.Point(217, 60);
+            this.txtSoyad.Name = "txtSoyad";
+            this.txtSoyad.Size = new System.Drawing.Size(121, 20);
+            this.txtSoyad.TabIndex = 33;
+            // 
+            // button2
+            // 
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button2.Location = new System.Drawing.Point(595, 371);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(138, 34);
+            this.button2.TabIndex = 34;
+            this.button2.Text = "Yenile";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(773, 507);
+            this.ClientSize = new System.Drawing.Size(786, 507);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.txtSoyad);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.dataGridView1);
@@ -257,5 +292,8 @@ namespace PROJE_ÖDEVİ
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.MaskedTextBox textBox1;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox txtSoyad;
+        private System.Windows.Forms.Button button2;
     }
 }
